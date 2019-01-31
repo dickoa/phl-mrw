@@ -425,7 +425,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
         // .attr("transform", "rotate(-90)")
         .style("font-weight", "")
         .style("font-size", "10px")
-        .style("fill", "#fff")
+        .style("fill", "#6794c0")
         .attr('class','textnilai');
 
     thenilai.text(d.nilai);
