@@ -300,9 +300,9 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
 
 
 
-  var clus1 = ['X-FIE','X-FHB','X-TD'];
-  var clus2 = ['ARMM-FIE','ARMM-FHB','ARMM-TD'];
-  var clus3 = ['Others-FIE','Others-FHB','Others-TD'];
+  var clus1 = ['X-Family Inside ECs','X-Family Home Based','X-Total Displaced'];
+  var clus2 = ['ARMM-Family Inside ECs','ARMM-Family Home Based','ARMM-Total Displaced'];
+  var clus3 = ['Others-Family Inside ECs','Others-Family Home Based','Others-Total Displaced'];
 
   function initializeData() {
     gv_data = gv_data.map(function(d) {
@@ -487,9 +487,9 @@ console.log(datetext);
   d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj5py5dSJj93TI3q393ZyjukzgbLJEiMRxKfQu4_XGCu0W97YOPC_2yxm/pub?output=csv", function(err, csv) {
     newdata = [];
     csv.forEach(function(d,i){
-      newdata.push( {'name':d['Region']+'-FIE','date':d['Reporting Period'],'nilai':d['Family Inside ECs']} )
-      newdata.push( {'name':d['Region']+'-FHB','date':d['Reporting Period'],'nilai':d['Family Home Based']} )
-      newdata.push( {'name':d['Region']+'-TD','date':d['Reporting Period'],'nilai':d['Total Displaced']} )
+      newdata.push( {'name':d['Region']+'-Family Inside ECs','date':d['Reporting Period'],'nilai':d['Family Inside ECs']} )
+      newdata.push( {'name':d['Region']+'-Family Home Based','date':d['Reporting Period'],'nilai':d['Family Home Based']} )
+      newdata.push( {'name':d['Region']+'-Total Displaced','date':d['Reporting Period'],'nilai':d['Total Displaced']} )
     })
     gv_data = newdata;
     console.log(newdata);
