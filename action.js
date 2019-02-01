@@ -178,7 +178,7 @@ function call_choropleth(){
           layer.setStyle({
             weight: 1.5,
             opacity: 1,
-            color: 'orange',
+            color: 'black',
             dashArray: '1',
           });
 
@@ -290,15 +290,10 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
   var barWidth = (tilesPerRow * tileSize) + barPadding;
 
   var filteredData=[];
-  var colors1 = ["#CAE5FF"];
-  var colors2 = ["#CAE5FF"];
-  var colors3 = ['#CAE5FF'];
+  let colors = ["#9bb4ca", "#9bb4ca", "#3d75b5"];
 
   var selecteddate = '', selectedMode = "top10";
   var cluscall = 1;
-
-
-
 
   var clus1 = ['X-Family Inside ECs','X-Family Home Based','X-Total Displaced'];
   var clus2 = ['ARMM-Family Inside ECs','ARMM-Family Home Based','ARMM-Total Displaced'];
@@ -440,16 +435,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
       .append("g")
       .merge(u)
       .style("fill", function(d, i) {
-        // if(num == 1){
-        //   return colors1[i % colors1.length];
-        // }
-        // else if(num == 2){
-        //   return colors2[i % colors2.length];
-        // }
-        // else if(num == 3){
-        //   return colors3[i % colors3.length];
-        // }
-        return '#3d75b5' //warna isi kotak
+        return colors[i % colors.length];
       })
       .each(updateBar)
       .each(updateLabel);
