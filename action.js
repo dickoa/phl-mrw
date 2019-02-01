@@ -268,7 +268,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
   var tilesPerRow = 10;
   var barPadding = 70;
   var tileSize = 0;
-  var labelFontSize = "12px";
+  var labelFontSize = "9px";
 
   if(widthOfScreen < 1400){
     barPadding = 50;
@@ -295,7 +295,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
   var selecteddate = '', selectedMode = "top10";
   var cluscall = 1;
 
-  var clus1 = ['X-Family Inside ECs','X-Family Home Based','X-Total Displaced'];
+  var clus1 = ['Region X-Family Inside ECs','Region X-Family Home Based','Region X-Total Displaced'];
   var clus2 = ['ARMM-Family Inside ECs','ARMM-Family Home Based','ARMM-Total Displaced'];
   var clus3 = ['Others-Family Inside ECs','Others-Family Home Based','Others-Total Displaced'];
 
@@ -419,7 +419,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj
         .attr("y", 10)
         // .attr("transform", "rotate(-90)")
         .style("font-weight", "")
-        .style("font-size", "10px")
+        .style("font-size", "8px")
         .style("fill", "#6794c0")
         .attr('class','textnilai');
 

@@ -181,9 +181,6 @@ h5{
     display: none;
 }
 
-
-
-
 .leaflet-grid-label .lng {
     margin-left: 8px;
     -webkit-transform: rotate(90deg);
@@ -221,9 +218,6 @@ h5{
     margin: 0;
     width: 100% !important;
 }
-
-
-
 
 
 #tooltip{
