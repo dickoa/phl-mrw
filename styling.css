@@ -86,7 +86,7 @@ background: radial-gradient(circle, rgba(10,38,76,1) 0%, rgba(9,10,19,1) 100%);*
 .titletotal_mobility{
     color: #859da9;
     font-size: 0.6rem;
-    font-weight: bold;
+    font-weight: normal;
     text-align: left;
     margin-bottom: 0px;
     width: 80%;
