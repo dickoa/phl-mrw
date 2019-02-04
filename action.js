@@ -248,7 +248,7 @@ function draw_circle(datesel){
   })
 }
 
-d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj5py5dSJj93TI3q393ZyjukzgbLJEiMRxKfQu4_XGCu0W97YOPC_2yxm/pub?output=csv',function(data){
+d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1eT3GZFFQBgaT_I_BtLxWi1gBh4sT7so662dF53q1DBotSw4cBZxx8X9H3UhxoVjwhqj4dM8SagKt/pub?output=csv',function(data){
   ALLDATA = data;
   data.forEach(function(d){
     
@@ -473,7 +473,7 @@ console.log(datetext);
     updateBars(3);
   }
 
-  d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ_PYrWlDX403VMb5oR2Wsj5py5dSJj93TI3q393ZyjukzgbLJEiMRxKfQu4_XGCu0W97YOPC_2yxm/pub?output=csv", function(err, csv) {
+  d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1eT3GZFFQBgaT_I_BtLxWi1gBh4sT7so662dF53q1DBotSw4cBZxx8X9H3UhxoVjwhqj4dM8SagKt/pub?output=csv", function(err, csv) {
     newdata = [];
     csv.forEach(function(d,i){
       newdata.push( {'name':d['Region']+'-Family Inside ECs','date':d['Reporting Period'],'nilai':d['Family Inside ECs']} )
