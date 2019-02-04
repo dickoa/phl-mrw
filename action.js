@@ -232,14 +232,17 @@ function draw_circle(datesel){
     theday = removestripdate(d['Reporting Period']);
     if(theday == datesel){
       if(d['No. of returned'] != 0 && d['No. of returned'] != '' && d['No. of returned'] != null){
-        THECIRCLE.push(L.circle([d.y, d.x], {
-          radius: d['No. of returned'],
-          color: 'orange',
-          fillColor: 'orange',
-          fillOpacity: 0.4,
-          weight: 0.5,
+        if(d.y!= '' && d.x!= ''){
+          THECIRCLE.push(L.circle([d.y, d.x], {
+            radius: d['No. of returned'],
+            color: 'orange',
+            fillColor: 'orange',
+            fillOpacity: 0.4,
+            weight: 0.5,
 
-        }).addTo(map));
+          }).addTo(map));
+        }
+        
       }
     }
   })
